@@ -3,8 +3,8 @@ function createWindow(
   title,
   content,
   options = {
-    width: '400px',
-    height: '500px',
+    width: '200px',
+    height: '300px',
   }
 ) {
   const newWindow = document.createElement('div');
