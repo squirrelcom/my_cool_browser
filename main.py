@@ -24,20 +24,6 @@ class MainWindow(QMainWindow):
         forward_btn.triggered.connect(self.browser.forward)
         navbar.addAction(forward_btn)
 
-        reload_btn = QAction('Reload', self)
-        reload_btn.triggered.connect(self.browser.reload)
-        navbar.addAction(reload_btn)
-
-        home_btn = QAction('Home', self)
-        home_btn.triggered.connect(self.navigate_home)
-        navbar.addAction(home_btn)
-
-        self.url_bar = QLineEdit()
-        self.url_bar.returnPressed.connect(self.navigate_to_url)
-        navbar.addWidget(self.url_bar)
-
-        self.browser.urlChanged.connect(self.update_url)
-
     def navigate_home(self):
         self.browser.setUrl(QUrl('http://programming-hero.com'))
 
