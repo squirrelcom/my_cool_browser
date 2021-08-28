@@ -118,7 +118,7 @@ function createImageWindow(id) {
       style="background-image:url('${windows[id].url}');"
       alt="${windows[id].title}"
     ></div>`,
-    { width: '900px', height: '600px' }
+    { width: '850px', height: '1300px' }
   );
 }
 
@@ -134,7 +134,7 @@ function createVideoWindow(id) {
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"
       allowfullscreen
     />"`,
-    { width: '900px', height: '600px' }
+    { width: '850px', height: '1300px' }
   );
 }
 
@@ -166,7 +166,7 @@ function createWebpageWindow(id, title, url) {
     id,
     windows[id].title,
     `<iframe class="webpage-iframe" src="${windows[id].url}" title="${windows[id].title}"></iframe>`,
-    { width: '400px', height: '600px' }
+    { width: '850px', height: '1300px' }
   );
 }
 
