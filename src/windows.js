@@ -166,14 +166,14 @@ function createWebpageWindow(id, title, url) {
     id,
     windows[id].title,
     `<iframe class="webpage-iframe" src="${windows[id].url}" title="${windows[id].title}"></iframe>`,
-    { width: '900px', height: '600px' }
+    { width: '400px', height: '600px' }
   );
 }
 
 function createConfigWindow() {
   createWindow(
     CONFIG_ID,
-    'SqUIrrel Settings',
+    'ChipOS Settings',
     `<div class="padded-content">
       <div class="input-field">
         <label>Wallpaper</label>
