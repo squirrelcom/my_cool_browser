@@ -166,7 +166,7 @@ function createWebpageWindow(id, title, url) {
     id,
     windows[id].title,
     `<iframe class="webpage-iframe" src="${windows[id].url}" title="${windows[id].title}"></iframe>`,
-    { width: '300px', height: '1000px' }
+    { width: '300px', height: '500px' }
   );
 }
 
