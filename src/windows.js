@@ -224,6 +224,7 @@ function createBookmarkWindow(id, options = {}) {
     id,
     windows[id].title,
     bookmarkContent(id, windows[id].bookmarks),
+  { width: '300px', height: '500px' }
     options
   );
 }
